@@ -17,5 +17,5 @@ Bikeshare
  - All for files are zipped in the _all_project_files_ document
 
 ### Credits
-Udacity Git Hub
+*Udacity Git Hub*
 
