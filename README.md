@@ -2,12 +2,16 @@
 ## Date created
 *April 7, 2026*
 
-## Project Name
-Bikeshare
+### Date created
+***April 7, 2026***
 
 ## Project Description
  This repository contains the documentation used in the Bikeshare project. This project explores data related to bike share systems for three major cities-Chicago, New York, City, and Washington.
+### Project Title
+**Bikeshare**
 
+### Description
+*Use data provided by Motivate to uncover bike share usage patterns*
 
 ## Files used are
  - chicago.csv
@@ -17,5 +21,5 @@ Bikeshare
  - All for files are zipped in the _all_project_files_ document
 
 ### Credits
-*It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.*
+*Udacity Git Hub*
 
