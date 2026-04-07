@@ -98,6 +98,10 @@ def load_data(city, month, day):
     if day != 'all':
         df = df[df['day_of_week'] == day]
 
+    #Memory Usage (in MB)
+    memory_mb = df.memory_usage(deep=True).sum() / 1_048_576
+        print(f"DataFrame memory usage: {memory_mb:.2f} MB"
+
     return df
 
 
