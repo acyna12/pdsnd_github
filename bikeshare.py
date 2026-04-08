@@ -77,7 +77,13 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    df = pd.read_csv(CITY_DATA[city])
+    
+df = pd.read_csv(
+    CITY_DATA[city],
+    usecols=USECOLS,
+    dtype=DTYPES
+)
+
 
     # Convert Start Time to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -98,9 +104,11 @@ def load_data(city, month, day):
     if day != 'all':
         df = df[df['day_of_week'] == day]
 
-    #Memory Usage (in MB)
+    
+ # Memory usage (in MB)
     memory_mb = df.memory_usage(deep=True).sum() / 1_048_576
-        print(f"DataFrame memory usage: {memory_mb:.2f} MB"
+    print(f"DataFrame memory usage: {memory_mb:.2f} MB")
+
 
     return df
 
